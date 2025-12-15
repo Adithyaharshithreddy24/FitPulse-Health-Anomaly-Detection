@@ -52,6 +52,7 @@ The application performs **data cleaning, correlation analysis, regression, clus
 
 ## 📂 Project Structure
 
+```
 FitPulse-Health-Anomaly-Detection/
 │
 ├── requirements.txt
@@ -69,8 +70,7 @@ FitPulse-Health-Anomaly-Detection/
 │       └── data/
 │           └── data.csv
 └── .devcontainer/
-
-````
+```
 
 ---
 
