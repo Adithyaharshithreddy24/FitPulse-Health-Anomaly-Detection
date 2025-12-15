@@ -1,4 +1,3 @@
-```md
 # 🏃‍♂️ FitPulse – Health Data Analysis & Anomaly Detection
 
 FitPulse is a **Streamlit-based data analysis and anomaly detection application** designed to analyze fitness and running-related health data.  
@@ -52,8 +51,6 @@ The application performs **data cleaning, correlation analysis, regression, clus
 ---
 
 ## 📂 Project Structure
-
-```
 
 FitPulse-Health-Anomaly-Detection/
 │
@@ -159,18 +156,4 @@ distance ≥ 3
 src/streamlit/app.py
 ```
 
----
 
-## 👤 Author
-
-**Adithya Harshith Reddy**
-B.Tech – Computer Science & Engineering
-
-🔗 GitHub: [https://github.com/Adithyaharshithreddy24](https://github.com/Adithyaharshithreddy24)
-
----
-
-⭐ If you find this project useful, feel free to star the repository!
-
-```
-```
