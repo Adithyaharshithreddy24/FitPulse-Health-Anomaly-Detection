@@ -1,71 +1,60 @@
-🏃‍♂️ FitPulse – Health Data Analysis & Anomaly Detection
+```md
+# 🏃‍♂️ FitPulse – Health Data Analysis & Anomaly Detection
 
-FitPulse is a Streamlit-based data analysis and anomaly detection application designed to analyze fitness and running-related health data.
-The application performs data cleaning, correlation analysis, regression, clustering, and anomaly detection using machine learning techniques, and presents results through interactive visualizations.
+FitPulse is a **Streamlit-based data analysis and anomaly detection application** designed to analyze fitness and running-related health data.  
+The application performs **data cleaning, correlation analysis, regression, clustering, and anomaly detection** using machine learning techniques, and presents results through interactive visualizations.
 
-🚀 Features
+---
 
-✅ Data Loading & Cleaning
+## 🚀 Features
 
-Handles missing values
+### ✅ Data Loading & Cleaning
+- Handles missing values  
+- Converts numerical columns to appropriate types  
 
-Converts numerical columns to appropriate types
+### 📊 Correlation Matrix
+- Visual heatmap of correlations between health metrics  
 
-📊 Correlation Matrix
+### 🔍 Correlation Visualization
+- Absolute correlation plots  
+- Identification of highly correlated variable pairs  
 
-Visual heatmap of correlations between health metrics
+### 📈 Linear Regression
+- Distance vs Time Elapsed prediction  
+- Interactive Plotly visualization  
 
-🔍 Correlation Visualization
+### 🔗 Scatter Matrix
+- Pairwise relationships between all numerical features  
 
-Absolute correlation plots
+### 🧩 Clustering
+- K-Means clustering on selected health metrics  
+- Scaled data visualization  
 
-Identification of highly correlated variable pairs
+### 🚨 Anomaly Detection
+- Mahalanobis distance–based anomaly detection  
+- Interactive user input for real-time anomaly checking  
 
-📈 Linear Regression
+---
 
-Distance vs Time Elapsed prediction
+## 🛠️ Tech Stack
 
-Interactive Plotly visualization
+- **Programming Language:** Python 3.11+  
+- **Framework:** Streamlit  
+- **Libraries:**  
+  - pandas  
+  - numpy  
+  - matplotlib  
+  - seaborn  
+  - plotly  
+  - scikit-learn  
+  - scipy  
 
-🔗 Scatter Matrix
+---
 
-Pairwise relationships between all numerical features
+## 📂 Project Structure
 
-🧩 Clustering
+```
 
-K-Means clustering on selected health metrics
-
-Scaled data visualization
-
-🚨 Anomaly Detection
-
-Mahalanobis distance–based anomaly detection
-
-Interactive user input for real-time anomaly checking
-
-🛠️ Tech Stack
-
-Programming Language: Python 3.11+
-
-Framework: Streamlit
-
-Libraries:
-
-pandas
-
-numpy
-
-matplotlib
-
-seaborn
-
-plotly
-
-scikit-learn
-
-scipy
-
-📂 Project Structure
 FitPulse-Health-Anomaly-Detection/
 │
 ├── requirements.txt
@@ -84,72 +73,104 @@ FitPulse-Health-Anomaly-Detection/
 │           └── data.csv
 └── .devcontainer/
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+````
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/Adithyaharshithreddy24/FitPulse-Health-Anomaly-Detection.git
 cd FitPulse-Health-Anomaly-Detection
+````
 
-2️⃣ Create & Activate Virtual Environment
+### 2️⃣ Create & Activate Virtual Environment
+
+```bash
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
+source venv/bin/activate   # macOS / Linux
+```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-▶️ How to Run the Application
+---
 
-⚠️ Important: Run Streamlit from the src/streamlit directory.
+## ▶️ How to Run the Application
 
+⚠️ **Important:** Run Streamlit from the `src/streamlit` directory.
+
+```bash
 cd src/streamlit
 streamlit run app.py
+```
 
+Open your browser and go to:
 
-After running, open your browser and go to:
-
+```
 http://localhost:8501
+```
 
-📊 Dataset
+---
 
-The dataset (data.csv) must be placed inside:
+## 📊 Dataset
 
+* The dataset (`data.csv`) must be placed inside:
+
+```
 src/streamlit/data/data.csv
+```
 
+* The application automatically cleans and processes the dataset at startup.
 
-The application automatically cleans and processes the dataset at startup.
+---
 
-🧠 Anomaly Detection Logic
+## 🧠 Anomaly Detection Logic
 
-Uses Mahalanobis Distance
+* Uses **Mahalanobis Distance**
+* Flags a data point as an anomaly if:
 
-Flags a data point as an anomaly if:
-
+```
 distance ≥ 3
+```
 
+### User Inputs
 
-Users can input:
+* Heart Rate
+* Time Elapsed
+* Running Cadence
+* Calories Burned
+* Distance
 
-Heart Rate
+---
 
-Time Elapsed
+## 🌐 Deployment (Streamlit Cloud)
 
-Running Cadence
+* Push the project to GitHub
+* Visit [https://streamlit.io/cloud](https://streamlit.io/cloud)
+* Select this repository
+* Set the **main file path** as:
 
-Calories Burned
-
-Distance
-
-🌐 Deployment
-
-This project is Streamlit Cloud–ready.
-
-To deploy:
-
-Push the project to GitHub
-
-Go to https://streamlit.io/cloud
-
-Select repository
-
-Set main file as:
-
+```
 src/streamlit/app.py
+```
+
+---
+
+## 👤 Author
+
+**Adithya Harshith Reddy**
+B.Tech – Computer Science & Engineering
+
+🔗 GitHub: [https://github.com/Adithyaharshithreddy24](https://github.com/Adithyaharshithreddy24)
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
+
+```
+```
